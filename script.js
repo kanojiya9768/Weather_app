@@ -1,10 +1,23 @@
 // have used universal weather app api 
+
+//on clicking enter
 document.getElementById('search').addEventListener('submit', (e) => {
   e.preventDefault();
   fetch_api();
 
   document.getElementById('searched_text').innerText = '';
 })
+
+
+
+//on click of search btn
+document.getElementById('search_city').addEventListener('click', (e) => {
+  e.preventDefault();
+  fetch_api();
+
+  document.getElementById('searched_text').innerText = '';
+})
+
 
 
 
